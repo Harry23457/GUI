@@ -1,0 +1,41 @@
+from tkinter import *
+import tkinter.font as f
+root=Tk()
+root.title("Rock,Paper,Sissors")
+headingfont=f.Font(family="Times new roman",size=25, weight=NORMAL)
+texthd=Label(root,text="Rock,Paper,Scissors",font=headingfont,bg="green")
+texthd.pack()
+text2=Label(root,text="lets start the game...",font=headingfont,bg="green")
+text2.pack()
+text3=Label(root,text="options:",font=headingfont,bg="grey")
+text3.pack()
+
+b1=Button(text="rock",bg="grey")
+b1.pack()
+b2=Button(text="paper",bg="light pink")
+b2.pack()
+b3=Button(text="sissors",bg="Red")
+b3.pack()
+
+f1=Frame(root)
+f1.pack()
+
+yourchoice=Label(f1,text="you selected:")
+yourchoice.grid(row=0,column=0)
+playerchoice=Label(f1,text="")
+playerchoice.grid(row=0,column=1)
+compchoice=Label(f1,text="computer selected:")
+compchoice.grid(row=1,column=0)
+computerchoice=Label(f1,text="")
+computerchoice.grid(row=1,column=1)
+
+playerscore=Label(f1,text="your score:")
+playerscore.grid(row=0,column=2)
+computerscore=Label(f1,text="computerscore")
+computerscore.grid(row=1,column=2)
+pscore=Label(f1,text="")
+pscore.grid(row=0,column=3)
+cscore=Label(f1,text="")
+cscore.grid(row=1,column=3)
+
+root.mainloop()
