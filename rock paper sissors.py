@@ -18,6 +18,8 @@ def rps(pchoice):
     else:
         text2.config(text="You lose")
         cscore += 1
+    plscore.config(text=pscore)
+    coscore.config(text=cscore)
 
 
 
@@ -53,6 +55,7 @@ computerchoice.grid(row=1,column=1)
 playerscore=Label(f1,text="your score:")
 playerscore.grid(row=0,column=2)
 computerscore=Label(f1,text="computerscore")
+computerscore.grid(row=1,column=2)
 plscore=Label(f1,text="")
 plscore.grid(row=0,column=3)
 coscore=Label(f1,text="")
